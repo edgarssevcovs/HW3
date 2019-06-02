@@ -26,6 +26,9 @@ function onClick() {
                     element.style.backgroundColor="#62ff32";
                     element.style.color="white";
                     element.style.borderRadius="8px";
+                    element.style.borderStyle="solid";
+                    element.style.borderWidth="1px";
+                    element.style.borderColor="#000";
                     element.innerText="FizzBuzz " + element.className;
                     element.style.textAlign="center";
                 }
@@ -36,6 +39,9 @@ function onClick() {
                     element.style.backgroundColor="#ff3262";
                     element.style.color="white";
                     element.style.borderRadius="8px";
+                    element.style.borderStyle="solid";
+                    element.style.borderWidth="1px";
+                    element.style.borderColor="#000";
                     element.innerText="Fizz " + element.className;
                     element.style.textAlign="center";
                 }
@@ -47,6 +53,9 @@ function onClick() {
                     element.style.backgroundColor="#ff8132";
                     element.style.color="white";
                     element.style.borderRadius="8px";
+                    element.style.borderStyle="solid";
+                    element.style.borderWidth="1px";
+                    element.style.borderColor="#000";
                     element.innerText="Buzz " + element.className;
                     element.style.textAlign="center";
                 }
@@ -58,6 +67,9 @@ function onClick() {
                     element.style.backgroundColor="#3292ff";
                     element.style.color="white";
                     element.style.borderRadius="8px";
+                    element.style.borderStyle="solid";
+                    element.style.borderWidth="1px";
+                    element.style.borderColor="#000";
                     element.innerText=element.className;
                     element.style.textAlign="center";
                 }
@@ -103,6 +115,9 @@ function onClickCustom (){
                     element.style.backgroundColor=fizzBuzzColor;
                     element.style.color="white";
                     element.style.borderRadius="8px";
+                    element.style.borderStyle="solid";
+                    element.style.borderWidth="1px";
+                    element.style.borderColor="#000";
                     element.innerText="FizzBuzz " + element.className;
                     element.style.textAlign="center";
                 }
@@ -113,6 +128,9 @@ function onClickCustom (){
                     element.style.backgroundColor=fizzColor;
                     element.style.color="white";
                     element.style.borderRadius="8px";
+                    element.style.borderStyle="solid";
+                    element.style.borderWidth="1px";
+                    element.style.borderColor="#000";
                     element.innerText="Fizz " + element.className;
                     element.style.textAlign="center";
                 }
@@ -124,6 +142,9 @@ function onClickCustom (){
                     element.style.backgroundColor=buzzColor;
                     element.style.color="white";
                     element.style.borderRadius="8px";
+                    element.style.borderStyle="solid";
+                    element.style.borderWidth="1px";
+                    element.style.borderColor="#000";
                     element.innerText="Buzz " + element.className;
                     element.style.textAlign="center";
                 }
@@ -135,6 +156,9 @@ function onClickCustom (){
                     element.style.backgroundColor=noneColor;
                     element.style.color="white";
                     element.style.borderRadius="8px";
+                    element.style.borderStyle="solid";
+                    element.style.borderWidth="1px";
+                    element.style.borderColor="#000";
                     element.innerText=element.className;
                     element.style.textAlign="center";
                 }
