@@ -23,34 +23,43 @@ function onClick() {
                     element.style.width="90px";
                     element.style.height="90px";
                     element.style.margin="10px";
-                    element.style.backgroundColor="red";
+                    element.style.backgroundColor="#62ff32";
                     element.style.color="white";
+                    element.style.borderRadius="8px";
                     element.innerText="FizzBuzz " + element.className;
+                    element.style.textAlign="center";
                 }
                 else if (i % 3 === 0 && i % 5 !== 0) {
                     element.style.width="90px";
                     element.style.height="90px";
                     element.style.margin="10px";
-                    element.style.backgroundColor="green";
+                    element.style.backgroundColor="#ff3262";
                     element.style.color="white";
+                    element.style.borderRadius="8px";
                     element.innerText="Fizz " + element.className;
+                    element.style.textAlign="center";
                 }
 
                 else if (i % 5 === 0 && i % 3 !== 0){
                     element.style.width="90px";
                     element.style.height="90px";
                     element.style.margin="10px";
-                    element.style.backgroundColor="blue";
+                    element.style.backgroundColor="#ff8132";
                     element.style.color="white";
+                    element.style.borderRadius="8px";
                     element.innerText="Buzz " + element.className;
+                    element.style.textAlign="center";
                 }
 
                 else if (i % 3 !== 0 && i % 5 !== 0){
                     element.style.width="90px";
                     element.style.height="90px";
                     element.style.margin="10px";
-                    element.style.backgroundColor="yellow";
+                    element.style.backgroundColor="#3292ff";
+                    element.style.color="white";
+                    element.style.borderRadius="8px";
                     element.innerText=element.className;
+                    element.style.textAlign="center";
                 }
         }
 }
@@ -70,10 +79,18 @@ function onClickCustom (){
     var endValue = document.getElementById('endValue').value;
     var fizzValue = document.getElementById('fizzValue').value;
     var buzzValue = document.getElementById('buzzValue').value;
+    var fizzColor = document.getElementById('fizzColor').value;
+    var buzzColor = document.getElementById('buzzColor').value;
+    var fizzBuzzColor = document.getElementById('fizzBuzzColor').value;
+    var noneColor = document.getElementById('noneColor').value;
     console.log('start value - ' + startValue);
     console.log('end value - ' + endValue);
     console.log('fizz value - ' + fizzValue);
     console.log('buzz value - ' + buzzValue);
+    console.log('fizz color - ' + fizzColor);
+    console.log('buzz color - ' + buzzColor);
+    console.log('fizzbuzz color - ' + fizzBuzzColor);
+    console.log('none color - ' + noneColor);
         for (startValue; startValue<=endValue; startValue++){
             const element = document.createElement('div');
             element.className="element" + startValue;
@@ -83,34 +100,43 @@ function onClickCustom (){
                     element.style.width="90px";
                     element.style.height="90px";
                     element.style.margin="10px";
-                    element.style.backgroundColor="red";
+                    element.style.backgroundColor=fizzBuzzColor;
                     element.style.color="white";
+                    element.style.borderRadius="8px";
                     element.innerText="FizzBuzz " + element.className;
+                    element.style.textAlign="center";
                 }
                 else if (startValue % fizzValue === 0 && startValue % buzzValue !== 0) {
                     element.style.width="90px";
                     element.style.height="90px";
                     element.style.margin="10px";
-                    element.style.backgroundColor="green";
+                    element.style.backgroundColor=fizzColor;
                     element.style.color="white";
+                    element.style.borderRadius="8px";
                     element.innerText="Fizz " + element.className;
+                    element.style.textAlign="center";
                 }
 
                 else if (startValue % buzzValue === 0 && startValue % fizzValue !== 0){
                     element.style.width="90px";
                     element.style.height="90px";
                     element.style.margin="10px";
-                    element.style.backgroundColor="blue";
+                    element.style.backgroundColor=buzzColor;
                     element.style.color="white";
+                    element.style.borderRadius="8px";
                     element.innerText="Buzz " + element.className;
+                    element.style.textAlign="center";
                 }
 
                 else if (startValue % fizzValue !== 0 && startValue % buzzValue !== 0){
                     element.style.width="90px";
                     element.style.height="90px";
                     element.style.margin="10px";
-                    element.style.backgroundColor="yellow";
+                    element.style.backgroundColor=noneColor;
+                    element.style.color="white";
+                    element.style.borderRadius="8px";
                     element.innerText=element.className;
+                    element.style.textAlign="center";
                 }
         }
 }
