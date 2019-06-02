@@ -16,11 +16,30 @@
 }
 
 #menuBox {
-    background-color: rgb(200, 200, 200);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    display: grid;
+    background-color: rgb(210, 210, 210);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+#valueBox {
+    background-color: rgb(220, 220, 220);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#colorBox {
+    background-color: rgb(230, 230, 230);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#customBox {
+    background-color: rgb(235, 235, 235);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
 h3 {
     display: inline;
     font-size: 16px;
@@ -28,7 +47,7 @@ h3 {
 }
 
 #generate {
-    margin-left: 25px;
+    padding: 3px;
     border-radius: 5px;
     background-color: #3399ff;
     color: #fff;
@@ -37,7 +56,7 @@ h3 {
 }
 
 #clear {
-    margin-left: 25px;
+    padding: 3px;
     background-color: #ff6633;
     border-radius: 5px;
     color: #fff;
@@ -46,6 +65,7 @@ h3 {
 }
 
 #generate2 {
+    padding: 3px;
     border-radius: 5px;
     background-color: #00e600;
     color: #fff;
