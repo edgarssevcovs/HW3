@@ -14,6 +14,7 @@ function innit () {
 
 function onClick() {
     console.log('Button hit');
+    onClickClear();
         for(let i = 1; i<101; i++){
             const element = document.createElement('div');
             element.className="element" + i;
