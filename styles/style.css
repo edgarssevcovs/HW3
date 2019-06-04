@@ -27,6 +27,7 @@
     border-width:1px;
     border-color:#000;
     text-align:center;
+    
 }
 
 .Fizz {
@@ -69,6 +70,36 @@
     border-width:1px;
     border-color:#000;
     text-align:center;
+}
+
+#sizeBox {
+    background-color: rgb(230, 230, 230);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sliders {
+    width: 100%;
+}
+
+.sliderLabel {
+
+}
+
+#elWidth {
+    width: 45%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;   
+}
+
+#elHeight {
+    width: 45%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;  
 }
 
 #menuBox {
