@@ -12,6 +12,22 @@ function innit () {
     submitCustom.addEventListener("click", onClickCustom);
 }
 
+var sl1 = document.getElementById("elWidth");
+var sl1Value = document.getElementById("elWidthOutput");
+sl1.innerHTML = sl1Value.value;
+
+sl1.oninput = function() {
+  sl1Value.innerHTML = this.value;
+}
+
+var sl2 = document.getElementById("elHeight");
+var sl2Value = document.getElementById("elHeightOutput");
+sl2.innerHTML = sl2Value.value;
+
+sl2.oninput = function() {
+  sl2Value.innerHTML = this.value;
+}
+
 function onClick() {
     onClickClear();
     console.log('Button hit');
@@ -22,26 +38,26 @@ function onClick() {
                 if (i % 3 ===0 && i % 5 === 0){
                     element.setAttribute("id", "element" +i);
                     element.setAttribute("class", "FizzBuzz");
-                    element.innerText="FizzBuzz " + element.id;
+                    element.innerText="FizzBuzz " + i;
                 }
                 else if (i % 3 === 0 && i % 5 !== 0) {
                     element.setAttribute("id", "element" +i);
                     element.setAttribute("class", "Fizz");
-                    element.innerText="Fizz " + element.id;
+                    element.innerText="Fizz " + i;
                     
                 }
 
                 else if (i % 5 === 0 && i % 3 !== 0){
                     element.setAttribute("id", "element" +i);
                     element.setAttribute("class", "Buzz");
-                    element.innerText="Buzz " + element.id;
+                    element.innerText="Buzz " + i;
                     
                 }
 
                 else if (i % 3 !== 0 && i % 5 !== 0){
                     element.setAttribute("id", "element" +i);
                     element.setAttribute("class", "Empty");
-                    element.innerText=element.id;
+                    element.innerText=i;
                     
                 }
         }
@@ -82,28 +98,36 @@ function onClickCustom (){
                 if (startValue % fizzValue === 0 && startValue % buzzValue === 0){
                     element.setAttribute("id", "element" +startValue);
                     element.setAttribute("class", "FizzBuzz");
-                    element.innerText="FizzBuzz " + element.id;
+                    element.innerText="FizzBuzz " + startValue;
                     element.style.backgroundColor=fizzBuzzColor;
+                    element.style.width=sl1.value + "px";
+                    element.style.height=sl2.value + "px";
                 }
                 else if (startValue % fizzValue === 0 && startValue % buzzValue !== 0) {
                     element.setAttribute("id", "element" +startValue);
                     element.setAttribute("class", "Fizz");
-                    element.innerText="Fizz " + element.id;
+                    element.innerText="Fizz " + startValue;
                     element.style.backgroundColor=fizzColor;
+                    element.style.width=sl1.value + "px";
+                    element.style.height=sl2.value + "px";
                 }
 
                 else if (startValue % buzzValue === 0 && startValue % fizzValue !== 0){
                     element.setAttribute("id", "element" +startValue);
                     element.setAttribute("class", "Buzz");
-                    element.innerText="Buzz " + element.id;
+                    element.innerText="Buzz " + startValue;
                     element.style.backgroundColor=buzzColor;
+                    element.style.width=sl1.value + "px";
+                    element.style.height=sl2.value + "px";
                 }
 
                 else if (startValue % fizzValue !== 0 && startValue % buzzValue !== 0){
                     element.setAttribute("id", "element" +startValue);
                     element.setAttribute("class", "Empty");
-                    element.innerText=element.id;
+                    element.innerText=startValue;
                     element.style.backgroundColor=noneColor;
+                    element.style.width=sl1.value + "px";
+                    element.style.height=sl2.value + "px";
 
                 }
         }
@@ -113,6 +137,7 @@ function onClickCustom (){
     const submit = document.getElementById('generate');
     submit.onclick = onClick;
 }
+
 
 
 innit();
